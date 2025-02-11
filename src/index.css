@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import "flowbite/src/themes/default";
 
 .bg-main {
   /* background: linear-gradient(#728156, #88976c, #98a77c, #b6c99b, #cfe1b9, #e7f5dc); */

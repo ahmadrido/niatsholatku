@@ -24,7 +24,7 @@ const Navigation = () => {
           <span className="self-center md:text-2xl font-semibold whitespace-nowrap dark:text-white uppercase">NiatSholatku</span>
       </a>
       <div className="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-          <button type="button" data-dropdown-toggle="language-dropdown-menu" className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 text-white">
+          <button type="button" data-dropdown-toggle="language-dropdown-menu" className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm rounded-lg cursor-pointer hover:bg-gray-600 text-gray-400 ">
             <img className="w-5 h-5 rounded-full me-3" aria-hidden="true" src="https://www.worldatlas.com/r/w1200-h701-c1200x701/upload/9f/69/0a/id-flag.jpg" alt="IND"/>
             Indonesia
           </button>
@@ -118,5 +118,9 @@ const Navigation = () => {
     )
 
 }
+
+{
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+ }
 
 export default Navigation
