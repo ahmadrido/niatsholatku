@@ -24,12 +24,12 @@ const Navigation = () => {
           <span className="self-center md:text-2xl font-semibold whitespace-nowrap dark:text-white uppercase">NiatSholatku</span>
       </a>
       <div className="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-          <button type="button" data-dropdown-toggle="language-dropdown-menu" className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+          <button type="button" data-dropdown-toggle="language-dropdown-menu" className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 text-white">
             <img className="w-5 h-5 rounded-full me-3" aria-hidden="true" src="https://www.worldatlas.com/r/w1200-h701-c1200x701/upload/9f/69/0a/id-flag.jpg" alt="IND"/>
             Indonesia
           </button>
         
-          <div className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
+          <div className="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-lg shadow-sm bg-gray-700" id="language-dropdown-menu">
             <ul className="py-2 font-medium" role="none">
               <li>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
@@ -90,10 +90,10 @@ const Navigation = () => {
 
         {/* / */}
         <input type="text" id="search-navbar" value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)} className="block w-76 md:w-96 p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autoComplete='off' placeholder="Cari..." />
+        onChange={(e) => setSearchQuery(e.target.value)} className="block w-76 md:w-96 p-2 ps-10 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autoComplete='off' placeholder="Cari..." />
 
       {searchQuery && (
-        <ul className="absolute bg-white text-black w-80 mt-2 rounded-md shadow-lg max-h-60 overflow-y-auto">
+        <ul className="absolute text-black w-80 mt-2 rounded-md shadow-lg max-h-60 overflow-y-auto">
           {filteredResults.length > 0 ? (
             filteredResults.map((item, index) => (
               <li
